@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="realEstateApp">
+<head>
+  <title>Real Estate Company</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js" defer></script>
+  <script src="https://code.angularjs.org/1.8.2/angular-route.min.js" defer></script>
+  <script src="app.module.js" defer></script>
+  <script src="app.config.js" defer></script>
+  <script src="services.js" defer></script>
+  <script src="./container/navSection/navSection.module.js" defer></script>
+  <script src="./container/navSection/navSection.component.js" defer></script>
+  <script src="./container/mainSection/mainSection.module.js" defer></script>
+  <script src="./container/mainSection/mainSection.component.js" defer></script>
+  <script src="./container/aboutSection/aboutSection.module.js" defer></script>
+  <script src="./container/aboutSection/aboutSection.componet.js" defer></script>
+  <script src="./container/login/login.module.js" defer></script>
+  <script src="./container/login/login.component.js" defer></script>
+  <script src="./container/contact/contact.module.js" defer></script>
+  <script src="./container/contact/contact.component.js" defer></script>
+  <script src="./error/error.module.js" defer></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <navsection></navsection>
+    <ng-view></ng-view>
+
+    <script>
+      function getSubmit(){
+          alert("Login Successfully....")
+      }
+  </script>
+     
+</body>
+</html>

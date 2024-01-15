@@ -1,0 +1,24 @@
+<div>
+      <div class="nav-main">
+          <nav class="nav-sec">
+               <h1 ng-click="$ctrl.getClicked($event)">Real Estate </h1>
+             <ul class="nav-items">
+                <!---another Logic--->
+                <li><a class="nav-link" ng-click="$ctrl.getClicked($event)" href="#">Home</a></li>
+                <li><a class="nav-link" ng-click="$ctrl.getClicked($event)" href="#">About</a></li>
+                <li><a class="nav-link" ng-click="$ctrl.getClicked($event)" href="#">Login</a></li>
+                <li><a class="nav-link" ng-click="$ctrl.getClicked($event)" href="#">Contact</a></li>
+                
+             </ul>
+         </nav>
+      </div>
+
+
+      <!--conatainer component-->
+
+<mainsection ng-if="$ctrl.home"></mainsection>
+<aboutsection ng-if="$ctrl.about"></aboutsection>
+<login ng-if="$ctrl.isLogin"></login>
+<contact-sec ng-if="$ctrl.contact"></contact-sec>
+
+</div>
