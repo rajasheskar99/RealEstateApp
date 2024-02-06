@@ -2,6 +2,9 @@ angular.module('realEstateApp')
     .config(['$routeProvider',function($routeProvider){
         $routeProvider.
         when('/',{
+            template:'<homesection></homesection>'
+        })
+        .when('/property',{
             template:'<mainsection></mainsection>'
         })
         .when("/about",{
@@ -12,6 +15,9 @@ angular.module('realEstateApp')
         })
         .when("/contact",{
             template:'<contact-sec></contact-sec>'
+        })
+        .when("/property/:id",{
+            template:'<propertydetail></propertydetail>'
         })
         .when('/error',{
             template:'<error></error>'

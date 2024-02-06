@@ -1,15 +1,12 @@
 angular.module("aboutSection")
     .component("aboutsection",{
         templateUrl:'./container/aboutSection/aboutSection.template.html',
-        controller:['factoryService',function getDataFromApi(factoryService){
+        controller:function getDataFromApi( ){
             var self=this
             self.data
 
-            self.getData=function(){
-                factoryService.getData().then(function(res){
-                    self.data=res.data.value})
-            }
-        }]})
+            s 
+        }})
 
 
         /*
